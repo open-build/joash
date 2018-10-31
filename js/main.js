@@ -92,7 +92,7 @@ const app = function () {
 	function _renderPostsPagination (pages) {
 		if (pages.next) {
 			const link = document.createElement('button');
-			link.innerHTML = 'Load more posts';
+			link.innerHTML = 'Load more submission details';
 			link.onclick = function (event) {
 				_incrementActivePage();
 				_getPosts();
@@ -101,7 +101,7 @@ const app = function () {
 			page.notice.innerHTML = '';
 			page.notice.appendChild(link);
 		} else {
-			_setNotice('No more posts to display');
+			_setNotice('No more submissions to display');
 		}
 	}
 
