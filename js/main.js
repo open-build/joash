@@ -1,7 +1,7 @@
 const app = function () {
-	const API_BASE = 'https://script.google.com/macros/s/AKfycbyP5Rifn7Q05Qcd7CTfm-AOouFHHvUAvCVVuKSfQu-LCqJocP8/exec';
+	const API_BASE = 'https://script.google.com/macros/s/AKfycby0SnKLcJyHkECxm7snjBcUc_SAqhwwF0jpbvX6YicE2q_n9Oo/exec';
 	const API_KEY = 'abcdef';
-	const CATEGORIES = ['monthly report', 'transfer list', 'CRM Log', 'budget','financial report'];
+	const CATEGORIES = ['monthly Report', 'transfer List', 'CRM Log', 'budget','financial report'];
 
 	const state = {activePage: 1, activeCategory: null};
 	const page = {};
