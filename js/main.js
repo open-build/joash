@@ -1,7 +1,7 @@
 const app = function () {
 	const API_BASE = 'https://script.google.com/macros/s/AKfycbyP5Rifn7Q05Qcd7CTfm-AOouFHHvUAvCVVuKSfQu-LCqJocP8/exec';
 	const API_KEY = 'abcdef';
-	const CATEGORIES = ['general', 'financial', 'technology', 'marketing'];
+	const CATEGORIES = ['monthly report', 'transfer list', 'CRM Log', 'budget','financial report'];
 
 	const state = {activePage: 1, activeCategory: null};
 	const page = {};
@@ -21,7 +21,7 @@ const app = function () {
 	}
 
 	function _getPosts () {
-		_setNotice('Loading posts');
+		_setNotice('Loading submission details');
 
 		fetch(_buildApiUrl(state.activePage, state.activeCategory))
 			.then((response) => response.json())
@@ -34,7 +34,7 @@ const app = function () {
 				_renderPostsPagination(json.pages);
 			})
 			.catch((error) => {
-				_setNotice('Unexpected error loading posts');
+				_setNotice('Unexpected error loading details');
 			})
 	}
 
