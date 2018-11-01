@@ -142,6 +142,7 @@ const app = function () {
  	};
 }();
 
+/* cssmenu */
 (function($) {
 
 	$.fn.menumaker = function(options) {
